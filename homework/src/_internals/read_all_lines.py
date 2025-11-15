@@ -1,4 +1,4 @@
-def read_all_lines(file: str) -> list[str]:
+def read_all_lines(folder: str, file: str) -> list[str]:
     """Read all the lines from a file
     
     Args:
@@ -7,6 +7,6 @@ def read_all_lines(file: str) -> list[str]:
     Returns:
         list of lines
     """
-    with open(f"data/input/{file}", "r") as f:
+    with open(f"{folder}/{file}", "r") as f:
         lines: list[str] = f.readlines()
     return lines
